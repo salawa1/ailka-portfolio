@@ -1,0 +1,40 @@
+@import url("shared.css");
+
+/* The title spans both the photo and the contact information. */
+.contact-layout {
+  column-gap: 9%;
+  row-gap: 45px;
+}
+
+.contact-title {
+  grid-column: 1 / -1;
+  text-align: center;
+  white-space: nowrap;
+  font-size: clamp(24px, 7.5vw, 96px);
+}
+
+/* Larger type gives the contact information more presence beside the portrait. */
+.contact-copy {
+  padding-top: 32px;
+}
+
+.contact-copy .eyebrow {
+  font-size: clamp(13px, 1.2vw, 17px);
+}
+
+.contact-copy h2 {
+  font-size: clamp(48px, 5.2vw, 70px);
+  margin: 24px 0 38px;
+}
+
+.contact-copy a {
+  font-size: clamp(18px, 1.9vw, 24px);
+  line-height: 1.5;
+  margin-top: 24px;
+}
+
+@media (max-width: 600px) {
+  .contact-layout {
+    gap: 30px;
+  }
+}

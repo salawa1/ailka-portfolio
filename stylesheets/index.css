@@ -1,0 +1,55 @@
+@import url("shared.css");
+
+/* Name and quote on the left; the entire photograph on the right. */
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(24px, 5vw, 80px);
+  padding-top: 30px;
+}
+
+.home-copy {
+  min-width: 0;
+}
+
+.home-title {
+  font-size: clamp(80px, 13vw, 200px);
+  line-height: 1;
+  padding: 0;
+}
+
+.home-bottom {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  padding-top: 30px;
+}
+
+.home-bottom p {
+  color: var(--quote-pink);
+  font-size: clamp(24px, 2.6vw, 38px);
+  line-height: 1.35;
+}
+
+.home-photo {
+  height: auto;
+  margin: 0;
+  background: transparent;
+}
+
+.home-photo img {
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .home-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 35px;
+  }
+
+  .home-title {
+    font-size: clamp(80px, 24vw, 150px);
+  }
+}

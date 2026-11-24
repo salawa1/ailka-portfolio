@@ -1,0 +1,10 @@
+@import url("shared.css");
+
+.about-copy h1 {
+  color: var(--jade);
+}
+
+.statement p {
+  font-size: 18px;
+  line-height: 1.85;
+}
